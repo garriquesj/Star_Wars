@@ -1,0 +1,251 @@
+I made my own solution file the first wouldnt upload to the repo
+jay@Jasons-MacBook-Air empire % mv millenium_falcon/* death_star 
+zsh: no matches found: millenium_falcon/*
+jay@Jasons-MacBook-Air empire % cd ..
+jay@Jasons-MacBook-Air star_wars % cd ..
+jay@Jasons-MacBook-Air Star_Wars % ls
+README.md       act1.sh         act2.sh         act3.sh         solution.txt    star_wars
+jay@Jasons-MacBook-Air Star_Wars % cd star_wars
+jay@Jasons-MacBook-Air star_wars % ls
+empire          rebellion
+jay@Jasons-MacBook-Air star_wars % cd rebellion
+jay@Jasons-MacBook-Air rebellion % ls
+millenium_falcon
+jay@Jasons-MacBook-Air rebellion % cd millenium_falcom
+cd: no such file or directory: millenium_falcom
+jay@Jasons-MacBook-Air rebellion % cd millenium_falcon
+jay@Jasons-MacBook-Air millenium_falcon % mv *txt death_star 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % pwd
+/Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion/millenium_falcon
+jay@Jasons-MacBook-Air millenium_falcon % ls
+chewbacca.txt           han_solo.txt            luke_skywalker.txt      obi_wan.txt             princess_leia.txt
+jay@Jasons-MacBook-Air millenium_falcon % mv cd ..
+mv: rename cd to ../cd: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % cd ..
+jay@Jasons-MacBook-Air rebellion % pwd
+/Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion
+jay@Jasons-MacBook-Air rebellion % cd ..
+jay@Jasons-MacBook-Air star_wars % ls
+empire          rebellion
+jay@Jasons-MacBook-Air star_wars % cd empire
+jay@Jasons-MacBook-Air empire % ls
+death_star
+jay@Jasons-MacBook-Air empire % cd *millenium_falcon death_star 
+zsh: no matches found: *millenium_falcon
+jay@Jasons-MacBook-Air empire % pwd
+/Users/jay/sei/deliverables/Star_Wars/star_wars/empire
+jay@Jasons-MacBook-Air empire % cd empire 
+cd: no such file or directory: empire
+jay@Jasons-MacBook-Air empire % ls
+death_star
+jay@Jasons-MacBook-Air empire % mv rebellion/millenium_falcon/* empire/death_star
+zsh: no matches found: rebellion/millenium_falcon/*
+jay@Jasons-MacBook-Air empire % mv millenium_falcon/* empire/death_star 
+zsh: no matches found: millenium_falcon/*
+jay@Jasons-MacBook-Air empire % pwd
+/Users/jay/sei/deliverables/Star_Wars/star_wars/empire
+jay@Jasons-MacBook-Air empire % cd ..           
+jay@Jasons-MacBook-Air star_wars % pwd
+/Users/jay/sei/deliverables/Star_Wars/star_wars
+jay@Jasons-MacBook-Air star_wars % ls
+empire          rebellion
+jay@Jasons-MacBook-Air star_wars % cd rebellion
+jay@Jasons-MacBook-Air rebellion % ls
+millenium_falcon
+jay@Jasons-MacBook-Air rebellion % mv millenium_falcon/* death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air rebellion % mv millenium_falcon/* empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air rebellion % mv millenium_falcon/* star_wars/empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air rebellion % mv millenium_falcon/* /star_wars/empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air rebellion % cd millenium_falcon
+jay@Jasons-MacBook-Air millenium_falcon % ls
+chewbacca.txt           han_solo.txt            luke_skywalker.txt      obi_wan.txt             princess_leia.txtgi
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt /star_wars/empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv *txt /star_wars/empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv *.txt /star_wars/empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv *.txt empire/death_star 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv *.txt death_star 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv *.chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt death_star zsh: no matches found: *.chewbacca.txt
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt star_wars_empire/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt death_star
+jay@Jasons-MacBook-Air millenium_falcon % mv death_star chewbacca.txt  
+jay@Jasons-MacBook-Air millenium_falcon % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+jay@Jasons-MacBook-Air millenium_falcon % git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+jay@Jasons-MacBook-Air millenium_falcon % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+jay@Jasons-MacBook-Air millenium_falcon % git add .
+jay@Jasons-MacBook-Air millenium_falcon % history
+  686  mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt death_star
+  687  mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt /star_wars/empire/death_star
+  688  mv *txt /star_wars/empire/death_star
+  689  mv *.txt /star_wars/empire/death_star
+  690  mv *.txt empire/death_star
+  691  mv *.txt death_star
+  692  mv *.chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt death_star
+  693  mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt death_star
+  694  mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt empire/death_star
+  695  mv chewbacca.txt han_solo.txt luke_skywalker.txt obi_wan.txt princess_leia.txt star_wars_empire/death_star
+  696  mv chewbacca.txt death_star
+  697  mv death_star chewbacca.txt 
+  698  git add.
+  699  git add
+  700  git add.
+  701  git add .
+jay@Jasons-MacBook-Air millenium_falcon % pwd
+/Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion/millenium_falcon
+jay@Jasons-MacBook-Air millenium_falcon % ls
+chewbacca.txt           han_solo.txt            luke_skywalker.txt      obi_wan.txt             princess_leia.txt
+jay@Jasons-MacBook-Air millenium_falcon % mv *.txt /death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv *.txt ..death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv *.txt star_wars/death_star
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca empire/death_star              
+mv: rename chewbacca to empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt death_star  
+jay@Jasons-MacBook-Air millenium_falcon % mv death_star chewbaca.txt
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt empire/death_star
+mv: rename chewbacca.txt to empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt /empire/death_star
+mv: rename chewbacca.txt to /empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt /star_wars/empire/death_star
+mv: rename chewbacca.txt to /star_wars/empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbacca.txt ~/star_wars/empire/death_star
+mv: rename chewbacca.txt to /Users/jay/star_wars/empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbaca.txt ~/star_wars/empire/death_star 
+mv: rename chewbaca.txt to /Users/jay/star_wars/empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbaca.txt star_wars/empire/death_star 
+mv: rename chewbaca.txt to star_wars/empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbaca.txt /empire/death_star 
+mv: rename chewbaca.txt to /empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbaca.txt /death_star
+mv: /death_star: Read-only file system
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbaca.txt empire/death_star
+mv: rename chewbaca.txt to empire/death_star: No such file or directory
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbaca.txt /death_star 
+mv: /death_star: Read-only file system
+jay@Jasons-MacBook-Air millenium_falcon % mv chewbaca.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/empire/death_star
+jay@Jasons-MacBook-Air millenium_falcon % mv *.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/empire/death_star
+jay@Jasons-MacBook-Air millenium_falcon % cd ../..
+jay@Jasons-MacBook-Air star_wars % ls
+empire          rebellion
+jay@Jasons-MacBook-Air star_wars % cd empire/death_star
+jay@Jasons-MacBook-Air death_star % ls
+chewbaca.txt            emperor_palpatine.txt   luke_skywalker.txt      princess_leia.txt
+darth_vader.txt         han_solo.txt            obi_wan.txt
+jay@Jasons-MacBook-Air death_star % rm obi_wan
+rm: obi_wan: No such file or directory
+jay@Jasons-MacBook-Air death_star % rm obi_wan.txt
+jay@Jasons-MacBook-Air death_star % mv chewbaca.txt luke_skywalker.txt princes_leia.txt han_solo.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion/millenium_falcon
+mv: rename princes_leia.txt to /Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion/millenium_falcon/princes_leia.txt: No such file or directory
+jay@Jasons-MacBook-Air death_star % mv princess_leia.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion/millenium_falcon
+jay@Jasons-MacBook-Air death_star % pwd
+/Users/jay/sei/deliverables/Star_Wars/star_wars/empire/death_star
+jay@Jasons-MacBook-Air death_star % cd..
+zsh: command not found: cd..
+jay@Jasons-MacBook-Air death_star % cd ..
+jay@Jasons-MacBook-Air empire % ls
+death_star
+jay@Jasons-MacBook-Air empire % cd death_star
+jay@Jasons-MacBook-Air death_star % ls
+darth_vader.txt         emperor_palpatine.txt
+jay@Jasons-MacBook-Air death_star % mv darth_vader.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/empire
+jay@Jasons-MacBook-Air death_star % ls
+emperor_palpatine.txt
+jay@Jasons-MacBook-Air death_star % cd ..
+jay@Jasons-MacBook-Air empire % ls
+darth_vader.txt death_star
+jay@Jasons-MacBook-Air empire % rm -rf death_star
+jay@Jasons-MacBook-Air empire % git add .
+jay@Jasons-MacBook-Air empire % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .DS_Store
+        renamed:    death_star/darth_vader.txt -> darth_vader.txt
+        renamed:    emperor_palpatine.txt -> ../rebellion/millenium_falcon/chewbacca.txt
+        new file:   ../rebellion/millenium_falcon/han_solo.txt
+        new file:   ../rebellion/millenium_falcon/luke_skywalker.txt
+        new file:   ../rebellion/millenium_falcon/obi_wan.txt
+        new file:   ../rebellion/millenium_falcon/princess_leia.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../rebellion/death_star/chewbacca.txt
+        deleted:    ../rebellion/death_star/han_solo.txt
+        deleted:    ../rebellion/death_star/luke_skywalker.txt
+        deleted:    ../rebellion/death_star/obi_wan.txt
+        deleted:    ../rebellion/death_star/princess_leia.txt
+        deleted:    ../rebellion/millenium_falcon/chewbacca.txt
+        deleted:    ../rebellion/millenium_falcon/obi_wan.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../.DS_Store
+        ../.DS_Store
+        ../rebellion/millenium_falcon/chewbaca.txt
+
+jay@Jasons-MacBook-Air empire % history
+  728  rm obi_wan.txt
+  729  mv chewbaca.txt luke_skywalker.txt princes_leia.txt han_solo.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion/millenium_falcon
+  730  mv princess_leia.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/rebellion/millenium_falcon
+  731  pwd
+  732  cd..
+  733  cd ..
+  734  ls
+  735  cd death_star
+  736  ls
+  737  mv darth_vader.txt /Users/jay/sei/deliverables/Star_Wars/star_wars/empire
+  738  ls
+  739  cd ..
+  740  ls
+  741  rm -rf death_star
+  742  git add .
+  743  git status
+jay@Jasons-MacBook-Air empire % 
